@@ -3,28 +3,35 @@
 
 <head>
     <title>operadores</title>
-
-    <script>
-        //busca el mayor de todos los numeros 
-        let num1 = 1;
-        let num2 = 2;
-        let num3 = 3;
-
-        if (num1 > num3 && num1 > num2) {
-            console.log("num1 es mayor que num2 y num3");
-        }
-        if (num2 > num3 && num2 > num1) {
-            console.log("num2 es mayor que num1 y  num3");
-        }
-        if (num3 > num1 && num3 > num2) {
-            console.log("num3 es mayor que num1 y num2");
-        }
-
-    </script>
 </head>
 
 <body>
-
+    <script>
+        // Espera a que la página se cargue completamente
+        document.addEventListener("DOMContentLoaded", function () {
+            // Busca el mayor de todos los números
+            let num1 = 1;
+            let num2 = 2;
+            let num3 = 3;
+            document.getElementById('calcular').innerHTML = `num1=${num1}, num2=${num2}, num3=${num3}`;
+            if (num1 > num3 && num1 > num2) {
+                document.getElementById('calcular').innerHTML = 'num1 es mayor que num2 y num3';
+            }
+            if (num2 > num3 && num2 > num1) {
+                document.getElementById('calcular').innerHTML = 'num2 es mayor que num1 y num3';
+            }
+            if (num3 > num1 && num3 > num2) {
+                document.getElementById('calcular').innerHTML = 'num3 es mayor que num1 y num2';
+            }
+            document.getElementById('calcular').style.display = 'block';
+        });
+    </script>
+    <p > 
+         num1 = 1;
+         num2 = 2;
+         num3 = 3;
+    </p>
+    <p id="calcular">  </p>
 </body>
 
 </html>
