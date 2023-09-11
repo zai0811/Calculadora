@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciones</title>
+</head>
+
+<body>
+    <script>
+        // Espera a que la página se cargue completamente
+        document.addEventListener("DOMContentLoaded", function () {
+            // Busca el mayor de todos los números
+            let num1 = 1;
+            let num2 = 2;
+            let num3 = 3;
+            document.getElementById('calcular').innerHTML = cualEsMayor(num1, num2, num3);
+            console.log(cualEsMayor(num1, num2, num3));
+
+
+        });
+        function cualEsMayor(num1, num2, num3) {
+            console.log(`num1=${num1}, num2=${num2}, num3=${num3}`);
+            if (num1 > num3 && num1 > num2) {
+                return 'num1 es mayor que num2 y num3';
+            }
+            if (num2 > num3 && num2 > num1) {
+                return 'num2 es mayor que num1 y num3';
+            }
+            if (num3 > num1 && num3 > num2) {
+                return 'num3 es mayor que num1 y num2';
+            }
+            document.getElementById('calcular').style.display = 'block';
+        }
+    </script>
+    <h3>CALCULAR MAYOR CON LLAMADA A UNA FUNCION</h3>
+    <p> num1 = 1; num2 = 2; num3 = 3; </p>
+    <p id="calcular"> </p>
+</body>
+
+</html>
