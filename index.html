@@ -15,15 +15,14 @@
                     <input class="item" id="peso" type="number" placeholder="Peso en kg" />
                     <p class="item" id="error">**Debe completar todos los datos</p>
                     <button class="item" id="calcular">Calcular</button>
-                    <p>Volumen diario calculado(cc):</p>
-                    <p class="item resultado" id="flu">Mantenimiento por hora(cc/hr):</p>
-                    <p>m+m/2 :</p>
-                    <p class="item resultado" id="man">Superficie corporal(SC): </p>
-                    <p>SC * 1500: </p>
-                    <p>SC * 2000: </p>
+                    <p class="item " id="volumenDiario">Volumen diario:</p> <!-- Agregamos un nuevo elemento para el volumen diario -->
+                    <p class="item " id="flu">Mantenimiento por hora(cc/hr):</p>
+                    <p class="item " id="man">m+m/2:</p>
+                    <p class="item" id="metodo">Método utilizado:</p> <!-- Agregamos un elemento para mostrar el método utilizado -->
+             
                 </div>
             </div>
-            <div id="detalle"><!--seccion der - Muestra info-->
+            <div id="detalle"><!--seccion der- de calculo-->
                 <div class="contenido">
                     <h1>¿Como se calcula?</h1>
                     <ul>
@@ -31,6 +30,38 @@
                         <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
                         <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                     </ul>
+                    <table border="1">
+                        <tr>
+                            <th>Peso</th>
+                            <th>Volumen diario</th>
+                            <th>Mantenimiento</th>
+                            <th>m+m/2</th>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>900 cc</td>
+                            <td>38 cc/hr</td>
+                            <td>57 cc/hr</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>1250 cc</td>
+                            <td>52 cc/hr</td>
+                            <td>78 cc/hr</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>1500 cc</td>
+                            <td>63 cc/hr</td>
+                            <td>94 cc/hr</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>1680 cc</td>
+                            <td>70 cc/hr</td>
+                            <td>105 cc/hr</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
